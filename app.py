@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 # Carga los datos
-df = pd.read_csv(r"C:\Users\WorkStation-JF\Desktop\TrabajoVisualizacionDash\CarSales.csv")
+df = pd.read_csv("CarSales.csv")
 df.columns = df.columns.str.strip()
 df['Date'] = pd.to_datetime(df['Date'], format="%m/%d/%Y")
 df['Year'] = df['Date'].dt.year

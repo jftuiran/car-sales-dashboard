@@ -18,6 +18,7 @@ max_date = df['Date'].max()
 
 external_stylesheets = [dbc.themes.CYBORG]
 app = Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server 
 app.title = "Car Sales Dashboard"
 
 # Colores para líneas y scatter que contrastan en ambos fondos
